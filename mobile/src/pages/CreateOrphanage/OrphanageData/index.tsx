@@ -28,15 +28,6 @@ export default function OrphanageData() {
   const [images, setImages] = useState<string[]>([]);
 
   async function handleCreateOrphanage() {
-    console.log(
-      name,
-      about,
-      instructions,
-      openHours,
-      openOnWeekends,
-      position,
-    );
-
     const data = new FormData
 
     data.append('name', name);

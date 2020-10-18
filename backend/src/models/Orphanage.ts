@@ -22,10 +22,16 @@ export default class Orphanage {
     instructions: string;
 
     @Column()
+    phone: string;
+
+    @Column()
     open_hours: string;
 
     @Column()
     open_on_weekends: boolean;
+
+    @Column()
+    approved: boolean;
 
     @OneToMany(() => Image, image => image.orphanage, {
         cascade: ['insert', 'update']
